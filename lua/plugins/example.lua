@@ -194,4 +194,7 @@ return {
       },
     },
   },
+  {
+    "natecraddock/workspaces.nvim",
+  },
 }
