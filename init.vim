@@ -1,13 +1,16 @@
-" Don't try to be vi compatible
+y
 set nocompatible
 
 " Color scheme (terminal)
-set t_Co=256 
-set background=dark
+"set t_Co=256 
+"set background=dark
 " let g:solarized_termcolors=256 let g:solarized_termtrans=1 put
 " https://raw.github.com/altercation/vim-colors-solarized/master/colors/solarized.vim
 " in ~/.vim/colors/ and uncomment:
-
+augroup zaibatsu_override
+    autocmd!
+    autocmd ColorScheme zaibatsu hi Pmenu guibg=#596979
+augroup END
 colorscheme zaibatsu
 
 " Helps force plugins to load correctly when it is turned back on below
@@ -103,6 +106,15 @@ set listchars=tab:▸\ ,eol:¬
 map <leader>l :set list!<CR>
 " Toggle tabs and EOL
 
+" Providers
+let g:loaded_perl_provider=0
+let g:loaded_node_provider=0
+let g:loaded_python3_provider=1
+let g:python3_host_prog="C:\\Python311\\python.exe"
+let g:loaded_ruby_provider=0
+
+
+
 " config help
 "
 "
@@ -111,4 +123,4 @@ let $MYVIMLUA = stdpath("config")."/Lua"
 edit $MYVIMRC
 "vsplit $MYVIMLUA/init.lua
 "split $MYVIMLUA/config/lazy.lua
-"vsplit $MYVIMLUA/plugins/test.lua
+vsplit $MYVIMLUA/plugins/test.lua
