@@ -110,7 +110,7 @@ map <leader>l :set list!<CR>
 let g:loaded_perl_provider=0
 let g:loaded_node_provider=0
 let g:loaded_python3_provider=1
-let g:python3_host_prog="C:\\Python311\\python.exe"
+"let g:python3_host_prog="C:\\Python311\\python.exe"
 let g:loaded_ruby_provider=0
 
 
