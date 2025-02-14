@@ -1,4 +1,4 @@
-y
+" Don't try to be vi compatible
 set nocompatible
 
 " Color scheme (terminal)
@@ -117,10 +117,9 @@ let g:loaded_ruby_provider=0
 
 " config help
 "
-"
+cd $MYVIMRC/..
 map <leader><F2> :source $MYVIMRC<CR>
 let $MYVIMLUA = stdpath("config")."/Lua"
 edit $MYVIMRC
 "vsplit $MYVIMLUA/init.lua
 "split $MYVIMLUA/config/lazy.lua
-vsplit $MYVIMLUA/plugins/test.lua
