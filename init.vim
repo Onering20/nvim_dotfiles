@@ -120,8 +120,8 @@ let g:loaded_ruby_provider=0
 cd $MYVIMRC/..
 map <leader><F2> :source $MYVIMRC<CR>
 let $MYVIMLUA = stdpath("config")."/Lua"
-edit $MYVIMRC
-Texplore
+"edit $MYVIMRC
+"Texplore
 
 "vsplit $MYVIMLUA/init.lua
 "split $MYVIMLUA/config/lazy.lua

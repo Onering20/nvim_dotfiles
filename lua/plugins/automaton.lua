@@ -29,7 +29,7 @@ return {
             "Automaton open config",   -- Open workspace's config.json
         },
 --]]
---[[      keys = {
+      keys = {
             
             { "<F5>", "<CMD>Automaton launch default<CR>", desc = "Automaton launch default"},
             { "<F6>", "<CMD>Automaton debug default<CR>", desc = "Automaton debug default"},
@@ -61,7 +61,7 @@ return {
 
 
         },
---]]
+
     }
 
 }
