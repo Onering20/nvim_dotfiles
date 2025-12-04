@@ -2,6 +2,9 @@ return {
 -- UI Statusline
     {
         "nvim-lualine/lualine.nvim", 
+        dependencies = {
+            'nvim-tree/nvim-web-devicons'
+        },
         enabled = true,
         opts = {
             options = {
@@ -55,7 +58,7 @@ return {
             tabline = {},
             winbar = {},
             inactive_winbar = {},
-            extensions = {'fugitve'}
+            extensions = {'fugitive'},
         }
     },
 }
