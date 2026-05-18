@@ -18,7 +18,12 @@ vim.opt.rtp:prepend(lazypath)
 -- Make sure to setup `mapleader` and `maplocalleader` before
 -- loading lazy.nvim so that mappings are correct
  vim.o.sessionoptions="blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
-vim.g.python3_host_prog = "C:/Python314/python.exe"
+
+if vim.fn.has("wsl") == 1 or vim.fn.has("unix") == 1 then
+  vim.g.python3_host_prog = "/usr/bin/python3"
+elseif vim.fn.has("win32") == 1 then
+  vim.g.python3_host_prog = "C:/Python314/python.exe"
+end
 -- Setup lazy.nvim
 require("lazy").setup({
     spec = {
@@ -32,6 +37,9 @@ require("lazy").setup({
   install = { colorscheme = { "zaibatsu" } },
   -- automatically check for plugin updates
   checker = { enabled = true },
+  rokes = {
+    enabled = false,
+  },
 })
 -- Fix Providers
 vim.g.loaded_perl_provider = 0

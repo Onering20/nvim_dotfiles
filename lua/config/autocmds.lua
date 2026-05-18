@@ -1,6 +1,5 @@
-
 vim.api.nvim_create_autocmd(
-    "TextYankPost", 
+    "TextYankPost",
     {
         pattern = '*',
         callback = function()
@@ -9,9 +8,9 @@ vim.api.nvim_create_autocmd(
                 higroup = 'Visual'
             })
         end,
-})
+    })
 
 vim.api.nvim_create_autocmd("BufWritePre", {
-  pattern = "*.py",
-  command = "silent! Black", -- auto-format Python
+    pattern = "*.py",
+    command = "silent! Black", -- auto-format Python
 })

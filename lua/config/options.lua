@@ -1,4 +1,4 @@
-vim.g.loaded_netrw = 1 
+vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 vim.opt.number = true
 vim.opt.relativenumber = true
@@ -10,10 +10,10 @@ vim.opt.listchars = {
     tab = ">-",
     trail = "-",
     nbsp = "+",
-    multispace ="│   ",
+    multispace = "│   ",
     precedes = "«",
     extends = "»",
-    }
+}
 vim.opt.list = true
 vim.opt.termguicolors = true
 vim.opt.cursorline = true
@@ -28,7 +28,7 @@ vim.opt.showcmd = true
 -- vim.o.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldinner: ,foldclose:]]
 vim.o.fillchars = 'eob: ,fold: ,foldopen:,foldsep: ,foldclose:'
 vim.o.foldcolumn = "auto:4" -- '0' is not bad
-vim.o.foldlevel = 99 -- Using ufo provider need a large value, feel free to decrease the value
+vim.o.foldlevel = 99        -- Using ufo provider need a large value, feel free to decrease the value
 vim.o.foldlevelstart = 99
 vim.o.foldenable = true
 vim.o.linebreak = false
@@ -36,3 +36,4 @@ vim.o.breakindent = true
 vim.o.showbreak = '↳ '
 vim.opt.cpoptions = "aABceFs_" --"aABceFs_"
 -- vim.opt.backspace = {'indent', 'eol', 'start'}
+vim.o.exrc = true
