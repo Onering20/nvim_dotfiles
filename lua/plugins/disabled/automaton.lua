@@ -2,7 +2,7 @@ return {
     {
 
         "Dax89/automaton.nvim",
-        dependancies = {
+        dependencies = {
             {"nvim-lua/plenary.nvim"},
             {"nvim-telescope/telescope.nvim"},
             {"mfussengegger/nvim-dap"},

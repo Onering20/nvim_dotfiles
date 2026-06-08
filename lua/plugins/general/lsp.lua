@@ -16,7 +16,7 @@ return {
     opts = {
       ensure_installed = {
         "lua_ls",
-        "pyright",
+        "basedpyright",
         "ts_ls",
         "html",
         "cssls",
@@ -25,6 +25,7 @@ return {
         "rust_analyzer",
       },
       automatic_installation = true,
+      automatic_enable = false,
     },
   },
 
@@ -100,7 +101,6 @@ return {
       "williamboman/mason-lspconfig.nvim",
     },
     config = function()
-      local lspconfig = require("lspconfig")
       local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
       local on_attach = function(_, bufnr)
@@ -138,7 +138,7 @@ return {
             },
           },
         },
-        pyright = {},
+        basedpyright = {},
         ts_ls = {},
         html = {},
         cssls = {},
@@ -150,7 +150,8 @@ return {
       for server, config in pairs(servers) do
         config.capabilities = capabilities
         config.on_attach = on_attach
-        lspconfig[server].setup(config)
+        vim.lsp.config(server, config)
+        vim.lsp.enable(server)
       end
     end,
   },

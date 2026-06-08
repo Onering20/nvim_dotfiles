@@ -10,7 +10,7 @@ return {{
             "LazyGitFilter",
             "LazyGitFilterCurrentFile",
         },
-        dependancies = {
+        dependencies = {
             "nvim-lua/plenary.nvim",
         },
         keys = {

@@ -1,3 +1,7 @@
+-- access to the parent directory
+
+    vim.env.MYVIMDIR = vim.fn.stdpath("config")
+
 -- Basic Settings
 
     require("config.options")

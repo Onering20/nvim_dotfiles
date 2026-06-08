@@ -4,11 +4,11 @@ return {
         "nvim-telescope/telescope.nvim",
         enabled = true,
         dependencies = {
-            "nvim-lua/plenary.nvim"},
+            "nvim-lua/plenary.nvim" },
         opts = {},
         keys = {
             {
-                "<leader>f",
+                "<leader>ff",
                 ":Telescope find_files<CR>",
                 silent = true,
                 desc = "Telescope [f]iles"

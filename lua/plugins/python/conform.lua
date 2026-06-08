@@ -5,7 +5,7 @@ return {
         enabled = true,  lazy = false,
         keys = {
             {
-                '<leader>tf',
+                '<leader>tb',
                 function()
                     -- If autoformat is currently disabled for this buffer,
                     -- then enable it, otherwise disable it

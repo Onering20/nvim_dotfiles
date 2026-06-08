@@ -37,7 +37,7 @@ require("lazy").setup({
   install = { colorscheme = { "zaibatsu" } },
   -- automatically check for plugin updates
   checker = { enabled = true },
-  rokes = {
+  rocks = {
     enabled = false,
   },
 })
